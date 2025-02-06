@@ -127,6 +127,8 @@ $ localstack stop
 
 Refer to the `*.tf` files
 
+The key pair resource is referenced in the instance resource. So, the dependency of the instance on the key pair is implied. The key pair is created before the instance.
+
 Start LocalStack
 
 ```bash
